@@ -10,12 +10,12 @@ public class CORFormeComplexe extends CORForme {
 	}
 
 	public void dessine(String s, MaFrame f) {
-		// si la chaine s est bien parsé alors on dessine sinon on fait rien
-		if (s.matches("^FormeComplexe couleur [0-9]+ [.*")) {
-			// on rècupère les formes qui sont dans la formeCompose
+		// si la chaine s est bien parsÃ© alors on dessine sinon on fait rien
+		if (s.matches("^FormeComplexe couleur [0-9]+ .*")) {
+			// on rÃ¨cupÃ¨re les formes qui sont dans la formeCompose
 			s = s.substring(s.indexOf("[") + 1, s.lastIndexOf("]"));
 
-			// on la décompose en sous forme
+			// on la dÃ©compose en sous forme
 			if (s.indexOf("|") != -1) {
 				String[] tab = s.split("\\|");
 
